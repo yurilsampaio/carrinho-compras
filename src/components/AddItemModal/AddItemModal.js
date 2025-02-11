@@ -9,7 +9,7 @@ function AddItemModal({ show, handleClose, addItem }) {
     const clearItemValues = () => {
         setItemName('');
         setItemQuantity(1);
-        setItemPrice(0);
+        setItemPrice('');
     }
 
     const handleSubmit = () => {
