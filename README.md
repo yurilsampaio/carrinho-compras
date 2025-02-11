@@ -1,6 +1,6 @@
 # Carrinho de Compras
 
-Este é um aplicativo de carrinho de compras desenvolvido com Create React App. Ele permite aos usuários gerenciar seus itens de compras de forma fácil e eficiente.
+Este é um aplicativo de carrinho de compras desenvolvido com React. Ele permite aos usuários gerenciar seus itens de compras de forma fácil e eficiente.
 
 ## Visão Geral
 
