@@ -4,7 +4,7 @@ import { Modal, Button, Form, FormGroup } from 'react-bootstrap';
 function AddItemModal({ show, handleClose, addItem }) {
     const [itemName, setItemName] = useState('');
     const [itemQuantity, setItemQuantity] = useState(1);
-    const [itemPrice, setItemPrice] = useState(0);
+    const [itemPrice, setItemPrice] = useState('');
 
     const clearItemValues = () => {
         setItemName('');

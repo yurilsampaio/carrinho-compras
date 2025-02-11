@@ -49,32 +49,34 @@ function App() {
         <div className='d-flex justify-content-center my-4'>
           <Button variant='success' onClick={() => setShowModal(true)}>Adicionar Item</Button> 
         </div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Vlr. UN</th>
-              <th>Qtd.</th>
-              <th>Vlr. Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {items.map((item, index) => (
-              <tr key={index}>
-                <td>{item.name}</td>
-                <td>R$ {item.price.toFixed(2)}</td>
-                <td>{item.quantity}</td>
-                <td>R$ {item.total.toFixed(2)}</td>
-                <td>
-                  <Button variant="danger" onClick={() => handleRemoveItem(index)}>
-                    <i className='bi bi-trash'></i>
-                  </Button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
         {items.length > 0 && (
+        <div>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Vlr. UN</th>
+                <th>Qtd.</th>
+                <th>Vlr. Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {items.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.name}</td>
+                  <td>R$ {item.price.toFixed(2)}</td>
+                  <td>{item.quantity}</td>
+                  <td>R$ {item.total.toFixed(2)}</td>
+                  <td>
+                    <Button variant="danger" onClick={() => handleRemoveItem(index)}>
+                      <i className='bi bi-trash'></i>
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        
           <div className='fixed-bottom'>
             <div className='d-flex justify-content-center my-2'>
                 <p>Total: R$ {totalPrice.toFixed(2)}</p>
@@ -83,6 +85,7 @@ function App() {
               <Button variant='success' onClick={handleClearCart}>Finalizar Compra</Button>
             </div>
           </div>
+        </div>
         )}
       </main>
       <AddItemModal show={showModal} handleClose={() => setShowModal(false)} addItem={handleAddItem} />
