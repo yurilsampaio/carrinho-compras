@@ -1,27 +1,8 @@
-.main-content {
-    padding-bottom: 110px;
-}
-
 .custom-navbar {
     background-color: #28a745;
     height: 100px;
 }
 
 .navbar-brand {
-    font-weight: bold;
-}
-
-.fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.fixed-bottom p {
     font-weight: bold;
 }
