@@ -4,6 +4,7 @@
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    width: 100%;
   }
 
 .item {
@@ -22,7 +23,7 @@
   .item-name {
     font-weight: bold;
     font-size: 1.1em;
-    max-width: 163px;
+    max-width: 170px;
     white-space: normal;
     overflow-wrap: break-word;
   }
@@ -30,17 +31,21 @@
   .item-info {
     font-size: 0.9em; 
     color: #666;
-    min-width: 186px;
+    min-width: 170px;
+    max-width: 170px;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   .item-price {
     margin-right: 20px;
+
   }
   
   .item-total {
     font-weight: bold;
     margin-right: 10px;
-    margin-left: 50px;
+    margin-left: 30px;
     white-space: nowrap;
   }
   

@@ -10,7 +10,7 @@ const CartItem = ({ item, onRemove }) => {
                 <div className="item-details">
                     <span className="item-name">{item.name}</span>
                     <div className="item-info">
-                        <span className="item-price">Vlr. Un. R$ {item.price.toFixed(2)}</span>
+                        <span className="item-price">Un. R$ {item.price.toFixed(2)}</span>
                         <span className="item-quantity">Qtd. {item.quantity}</span>
                     </div>
                 </div>
