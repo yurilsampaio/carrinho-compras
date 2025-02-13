@@ -13,9 +13,13 @@ function AddItemModal({ show, handleClose, addItem }) {
     }
 
     const handleSubmit = () => {
-        addItem(itemName, itemQuantity, itemPrice);
-        clearItemValues();
-        handleClose();
+        if (!itemName || !itemQuantity || !itemPrice) {
+            alert('Há um campo sem valor informado. Verifique e tente novamente.');
+            return;
+        }
+            addItem(itemName, itemQuantity, itemPrice);
+            clearItemValues();
+            handleClose();
     }
 
     return (

@@ -11,9 +11,11 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const savedItems = localStorage.getItem('carrinho-compras-items');
-    if (savedItems) {
-      setItems(JSON.parse(savedItems));
+    const savedItems = JSON.parse(localStorage.getItem('carrinho-compras-items'));
+    const filteredItems = savedItems.filter(item => item.name && item.quantity && item.price && item.total)
+    if (filteredItems) {
+      setItems(filteredItems);
+      saveItemsToLocalStorage(filteredItems);
     }
   }, []);
 
