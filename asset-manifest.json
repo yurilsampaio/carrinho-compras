@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/carrinho-compras/static/css/main.68d2a9ee.css",
-    "main.js": "/carrinho-compras/static/js/main.e1ca4bda.js",
+    "main.js": "/carrinho-compras/static/js/main.a56e2065.js",
     "static/media/bootstrap-icons.woff?": "/carrinho-compras/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/carrinho-compras/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/carrinho-compras/index.html",
     "main.68d2a9ee.css.map": "/carrinho-compras/static/css/main.68d2a9ee.css.map",
-    "main.e1ca4bda.js.map": "/carrinho-compras/static/js/main.e1ca4bda.js.map"
+    "main.a56e2065.js.map": "/carrinho-compras/static/js/main.a56e2065.js.map"
   },
   "entrypoints": [
     "static/css/main.68d2a9ee.css",
-    "static/js/main.e1ca4bda.js"
+    "static/js/main.a56e2065.js"
   ]
 }
